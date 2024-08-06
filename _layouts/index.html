@@ -1,1 +1,176 @@
-{{ content }}
+<script>
+:root {
+	--width: 90%;
+	--border: 1px solid black;
+	--barBG: rgba(0,0,0,100);
+}
+* {
+	text-decoration: none;
+}
+body {
+	background: conic-gradient(rgba(155,155,155,1) 90deg, rgba(150,150,150,1) 90deg 180deg, rgba(155,155,155,1) 180deg 270deg, rgba(150,150,150,1) 270deg);
+	background-repeat: repeat;
+	background-size: 16px 16px;
+	background-position: top left;
+	border: 0px;
+}
+#bottom {
+	width: var(--width);
+	border: var(--border);
+	margin: auto;
+}
+#toolbar {
+	margin: auto;
+	width: var(--width);
+	border: var(--border);
+	border-bottom: 0px;
+	background: var(--barBG);
+	font-size: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.toolbarButton {
+	margin: 4px;
+}
+#bannerHolder {
+	margin: auto;
+	width: var(--width);
+	border: var(--border);
+	background: linear-gradient(-90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,1) 100%), url("funny geometry.png");
+	background-size: cover;
+	display: flex;
+	border-bottom: 0px;
+}
+#logoHolder {
+	width: 50%;
+	padding: 8px;
+}
+#splashHolder {
+	width: 50%;
+	margin-top: auto;
+	margin-right: auto;
+	text-align: right;
+	padding: 4px;
+	a {
+		color: black;
+		text-shadow: 2px 2px 4px #000000;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+#lowerBody {
+	display: flex;
+	width: var(--width);
+	border: var(--border);
+	margin: auto;
+	background: rgba(128,128,128,0.35);
+}
+#sidebarLeft {
+	width: 15%;
+	border: 0px;
+	border-right: var(--border);
+}
+.sidebarSection {
+	
+}
+.sidebarHeading {
+	border-bottom: var(--border);
+	background: rgba(200,200,200,1);
+}
+#midBody {
+	width: 85%;
+	border: var(--border);
+}
+#navbar {
+	display: flex;
+	border: var(--border);
+	background: var(--barBG);
+}
+#navbarList {
+	width: 80%;
+	border: var(--border);
+	display: flex;
+{
+.navbarLink {
+	border: var(--border);
+}
+#navbarLinkFirst {
+	border: var(--border);
+{
+#navbarLinkLast {
+	border: var(--border);
+}
+#search {
+	width: 20%;
+	border: var(--border);
+}
+#mainBody {
+	border: var(--border);
+}
+
+</script>
+
+<body>
+	<div id="toolbar">
+		<div class="toolbarButton"><a href="#"><img src="silk-icons-main\silk-icons-main\icons\script.png"></img></a></div>
+		<div class="toolbarButton"><a href="#"><img src="silk-icons-main\silk-icons-main\icons\server.png"></img></a></div>
+		<div class="toolbarButton"><a href="#"><img src="silk-icons-main\silk-icons-main\icons\plugin.png"></img></a></div>
+		<div class="toolbarButton"><a href="#"><img src="silk-icons-main\silk-icons-main\icons\feed.png"></img></a></div>
+		<div class="toolbarButton"><a href="#"><img src="silk-icons-main\silk-icons-main\icons\error.png"></img></a></div>
+	</div>
+	<div id="bannerHolder">
+		<div id="logoHolder">
+			<a href="#"><img src="logo4.png" height="80px"></img></a>
+		</div>
+		<div id="splashHolder">
+			<a href="#">Check out my awesome geometry...</a>
+		</div>
+	</div>
+	<div id="lowerBody">
+		<div id="sidebarLeft">
+			<div class="sidebarSection">
+				<div class="sidebarHeading">
+					Overview
+				</div>
+				<a href="#">Home</a><br>
+				<a href="#">Navigation</a><br>
+				<a href="#">Files</a><br>
+				<a href="#">About</a>
+				<div class="sidebarHeading">
+					Files
+				</div>
+				<a href="#">One</a><br>
+				<a href="#">Two</a><br>
+				<a href="#">Three</a>
+			</div>
+		</div>
+		<div id="midBody">
+			<div id="navbar">
+				#navbar
+				<div id="navbarList">
+					#navbarList
+					<div class="navbarLink" id="navbarLinkFirst">
+						.navbarLink, #navbarLinkFirst
+					</div>
+					<div class="navbarLink">
+						.navbarLink
+					</div>
+					<div class="navbarLink" id="navbarLinkLast">
+						.navbarLink, #navbarLinkLast
+					</div>
+				</div>
+				<div id="search">
+					#search
+				</div>
+			</div>
+			<div id="mainBody">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		#bottom 
+	</div>
+</body>
+
